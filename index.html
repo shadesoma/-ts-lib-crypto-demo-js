@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ts-lib-crypto-demo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="main..css">
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<section class="text-center">
+  <form class="form-signin">
+
+    <label for="data" class="">Address:</label>
+    <p id="data">{cryptAddress ? address(cryptAddress) : ''}</p>
+
+  <br/>
+  <h1 class="h3 mb-3 font-weight-normal">Введите данные</h1>
+  <input class="form-control" type="text" id="input" placeholder="Введите данные"
+         onChange={handleChange} value={inputData}/>
+  <br/>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" onClick={clickHandler}>submit
+  </button>
+  <br/>
+  <a href="https://github.com/shadesoma/ts-lib-crypto-demo">github</a>
+  </form>
+</section>
+</body>
+</html>
